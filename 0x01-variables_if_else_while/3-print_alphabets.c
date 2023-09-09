@@ -22,7 +22,6 @@ int main(void)
 	putchar(letter_upper);
 	letter_upper++;
 	}
-	
 	putchar('\n');
 
 	return (0);
