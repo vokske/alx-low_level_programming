@@ -18,6 +18,6 @@ int main(void)
 		}
 		letter_lower++;
 	}
-	putchar('\n');	
+	putchar('\n');
 	return (0);
 }
