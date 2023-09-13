@@ -7,6 +7,6 @@ if (m < 0)
 {
 m = -m;
 }
-_putchar('m');
+_putchar(m);
 return (m);
 }
