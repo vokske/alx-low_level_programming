@@ -1,8 +1,12 @@
 #include "main.h"
 
-int print_last_digit(int n, int m)
+int print_last_digit(int n)
 {
-m = n % 10;
+int m = n % 10;
+if (m < 0)
+{
+m = -m;
+}
 _putchar('m');
 return (m);
 }
