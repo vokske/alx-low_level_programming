@@ -2,7 +2,7 @@
 #include "main.h"
 
 int _putchar(char c);
-int main()
+void print_alphabet()
 {
 char letter = 'a';
 
@@ -12,5 +12,4 @@ _putchar(letter);
 letter++;
 }
 _putchar('\n');
-return (0);
 }
