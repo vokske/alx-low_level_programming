@@ -1,15 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 
-int _putchar(char c);
-void print_alphabet(void)
+int main(void)
 {
-char letter = 'a';
-
-while (letter <= 'z')
-{
-_putchar(letter);
-letter++;
-}
-_putchar('\n');
+print_alphabet();
+return (0);
 }
