@@ -3,6 +3,7 @@
 
 /**
  * print_to_98 - Prints all natural numbers to 98
+ * @n: Integer to be passed
  */
 void print_to_98(int n)
 {
