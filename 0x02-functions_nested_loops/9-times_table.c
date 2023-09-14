@@ -13,6 +13,7 @@ for (j = 0; j <= 9; j++)
 n = i * j;
 if (n > 9)
 {
+_putchar(' ');
 _putchar((n / 10) + '0');
 _putchar((n % 10) + '0');
 }
