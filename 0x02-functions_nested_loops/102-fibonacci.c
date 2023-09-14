@@ -7,20 +7,26 @@
  */
 int main(void)
 {
-int previous = 1;
-int current = 2;
+long int previous = 1;
+long int current = 2;
+int n = 50;
+int i;
 
-printf("%d, %d, ", previous, current);
-while (current <= 50 )
+printf("%ld, %ld, ", previous, current);
+for (i = 0; i < 50; i++)
 {
-int next = previous + current;
-if (next <= 50)
-{
-printf("%d, ", next);
-}
+long int next = previous + current;
 previous = current;
 current = next;
+printf("%ld", next);
+if (i < n - 1)
+{
+printf(", ");
 }
+else
+{
 printf("\n");
+}
+}
 return (0);
 }
