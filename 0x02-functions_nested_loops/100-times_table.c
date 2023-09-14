@@ -20,12 +20,12 @@ int product = i * j;
 
 if (j > 0)
 {
-printf(",  ");
+printf(", ");
 }
-if (product < 10)
+/*if (product < 10)
 {
 printf(" ");
-}
+}*/
 printf("%d", product);
 }
 printf("\n");
