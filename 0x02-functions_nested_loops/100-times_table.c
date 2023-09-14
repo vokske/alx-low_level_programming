@@ -20,7 +20,7 @@ int product = i * j;
 
 if (j > 0)
 {
-printf(",  ");
+printf(",   ");
 }
 /*if (product < 10)
 {
