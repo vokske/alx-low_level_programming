@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-_isdigit(2);
+_isdigit('c');
 return (0);
 }
