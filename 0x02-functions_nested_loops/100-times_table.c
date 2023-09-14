@@ -22,10 +22,10 @@ if (j > 0 && j  < 10)
 {
 printf(",   ");
 }
-/*if (product < 10)
+if (product >= 10)
 {
 printf(" ");
-}*/
+}
 printf("%d", product);
 }
 printf("\n");
