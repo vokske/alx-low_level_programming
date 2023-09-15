@@ -2,7 +2,7 @@
 
 /**
  * print_square - Prints a square
- * @n: Parameter to be passed
+ * @size: Parameter to be passed
  */
 void print_square(int size)
 {
@@ -15,7 +15,7 @@ return;
 }
 for (i = 0; i < size; i++)
 {
-for(j = 0; j < size; j++)
+for (j = 0; j < size; j++)
 {
 _putchar('#');
 }
