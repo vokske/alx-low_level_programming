@@ -1,13 +1,20 @@
 #include "main.h"
 
+/**
+ * puts2 - Prints every other letter of a string
+ * @str: Random string
+ */
 void puts2(char *str)
 {
-int len = 0;
+int i = 0;
 
-while (str[len] != '\0')
+while (str[i] != '\0')
 {
-_putchar(str[len]);
-len++;
+if (i % 2 == 0)
+{
+_putchar(str[i]);
+}
+i++;
 }
 _putchar('\n');
 }

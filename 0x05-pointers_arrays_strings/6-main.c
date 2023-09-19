@@ -7,7 +7,7 @@
  */
 int main()
 {
-char str[] = "Tip-toe";
+char str[] = "Tiptoe";
 puts2(str);
 return (0);
 }
