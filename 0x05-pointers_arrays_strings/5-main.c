@@ -7,7 +7,7 @@
  */
 int main()
 {
-char s[] = "Tekken";
+char s[7] = "Tekken";
 
 rev_string(s);
 return (0);
