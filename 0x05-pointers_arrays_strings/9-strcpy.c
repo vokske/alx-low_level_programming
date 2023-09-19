@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**_strcpy - Copies a string to memory
+/**
+ * _strcpy - Copies a string to memory
  * @dest: Memory address
  * @scr: Another memory location
  *
