@@ -9,7 +9,6 @@ int main()
 {
 char s[24] = "This is a longer string";
 
-_putchar(s[24]);
 rev_string(s);
 _putchar('\n');
 return (0);
