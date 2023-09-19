@@ -7,9 +7,7 @@
  */
 int main()
 {
-char s[24] = "This is a longer string";
-
-rev_string(s);
+rev_string("This is a longer string");
 _putchar('\n');
 return (0);
 }
