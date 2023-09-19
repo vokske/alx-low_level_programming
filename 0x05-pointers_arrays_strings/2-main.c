@@ -7,8 +7,6 @@
  */
 int main()
 {
-int a, b;
-
-swap_int(&a, &b);
+_strlen("Set");
 return (0);
 }
