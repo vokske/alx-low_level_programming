@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - Entry point
@@ -12,7 +11,5 @@ int main()
 	char src[] = "Toy";	
 	
 	_strcat(dest, src);
-	printf("%s", dest);
-	printf("\n");
 	return (0);
 }
