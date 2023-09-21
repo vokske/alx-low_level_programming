@@ -11,5 +11,6 @@ int main()
 	char src[] = "Toy";	
 	
 	_strcat(dest, src);
+	_putchar('\n');
 	return (0);
 }
