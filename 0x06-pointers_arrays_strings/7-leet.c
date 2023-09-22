@@ -8,28 +8,19 @@
 char *leet(char *s)
 {
 	char *orig = s;
-	
+	char leetmap[256] = {0};
+
+	leetmap['a'] = leetmap['A'] = '4';
+	leetmap['e'] = leetmap['E'] = '3';
+	leetmap['o'] = leetmap['O'] = '0';
+	leetmap['t'] = leetmap['T'] = '7';
+	leetmap['l'] = leetmap['L'] = '1';
+
 	while (*s)
 	{
-	if (*s == 'a' || *s == 'A')
+	if (leetmap[(unsigned char)*s])
 	{
-	*s = '4';
-	}
-	else if (*s == 'e' || *s == 'E')
-	{
-	*s = '3';
-	}
-	else if (*s == 'o' || *s == 'O')
-	{
-	*s = '0';
-	}
-	else if (*s == 't' || *s == 'T')
-	{
-	*s = '7';
-	}
-	else if (*s == 'l' || *s == 'L')
-	{
-	*s = 1;
+	*s = leetmap[(unsigned char)*s];
 	}
 	s++;
 	}
