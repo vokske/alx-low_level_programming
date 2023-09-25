@@ -8,6 +8,7 @@
 int main()
 {
 	char str[10] = "cris-cross";
+
 	_strchr(str, 'c');
 	return (0);
 }
