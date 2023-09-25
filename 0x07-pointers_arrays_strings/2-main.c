@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	char str[10] = "cris-cross";
 
