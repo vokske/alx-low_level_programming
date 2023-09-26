@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	char *p, *a;
 
-	for (p = s; *p != '\0';++p)
+	for (p = s; *p != '\0'; ++p)
 	{
 		for (a = accept; *a != '\0'; ++a)
 		{
@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				break;
 			}
-		
+
 		}
 		if (*a == '\0')
 		{
