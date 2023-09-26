@@ -6,7 +6,7 @@
  * @haystack: Random string
  * @needle: Substring
  *
- * Reurn: Pointer to the beginning of located substring. Null otherwise
+ * Return: Pointer to the beginning of located substring. Null otherwise
  */
 char *_strstr(char *haystack, char *needle)
 {
