@@ -10,6 +10,5 @@ int main()
 {
 	char s[8] = "Caroline";
 	_puts_recursion(s);
-	_putchar('\n');
 	return (0);
 }
