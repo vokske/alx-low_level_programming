@@ -8,7 +8,7 @@
  */
 int main()
 {
-	char s[] = "Caroline\n";
+	char s[] = "Caroline";
 	_puts_recursion(s);
 	return (0);
 }
