@@ -3,7 +3,7 @@
 
 /**
  * factorial - Returns the factorial of a number
- * n: Random integer
+ * @n: Random integer
  *
  * Return: Factorial of the given integer
  */
@@ -17,5 +17,5 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return (n * factorial (n - 1));
+	return (n * factorial(n - 1));
 }
