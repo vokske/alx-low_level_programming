@@ -6,7 +6,7 @@
  * @s: Random string
  * @i: Index or counter
  *
- * Return - Length of a string
+ * Return: Length of a string
  */
 int str_len(char *s, int i)
 {
