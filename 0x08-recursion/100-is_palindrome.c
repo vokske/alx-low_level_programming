@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * int str_len - Calculates the length of a string
+ * str_len - Calculates the length of a string
  * @s: Random string
  * @i: Index or counter
  *
@@ -43,9 +43,9 @@ int palindrome_helper(char *s, int start, int end)
  *
  * Return: 1 if string is a palindrome. 0 otherwise
  */
-int is_palindrome (char *s)
+int is_palindrome(char *s)
 {
 	int len = str_len(s, 0);
-	
-	return (palindrome_helper(s, 0, len - 1 ));
+
+	return (palindrome_helper(s, 0, len - 1));
 }
