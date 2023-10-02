@@ -1,7 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 
-/** calc_len - Calculates the length of a string
+/**
+ * calc_len - Calculates the length of a string
  * @s: Random string
  * @i: Index or counter
  *
