@@ -3,9 +3,11 @@
 
 /**
  * main - Entry point
+ * @argc: Argument counter
+ * @argv: Argument vector
  *
- * Return _ Always 0
- */ 
+ * Return: Always 0
+ */
 int main(int argc, char *argv[])
 {
 	if (argc > 0)
