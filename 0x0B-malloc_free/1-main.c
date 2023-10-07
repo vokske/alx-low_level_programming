@@ -8,7 +8,7 @@
  */
 int main()
 {
-	char *str = "Hey there!";
+	char *str = "First, solve the problem. Then, write the code.";
 
 	char *dup_str = _strdup(str);
 	if (dup_str == NULL)
