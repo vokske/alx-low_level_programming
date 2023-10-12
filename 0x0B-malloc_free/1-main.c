@@ -8,9 +8,9 @@
  */
 int main()
 {
-	char *str = "First, solve the problem. Then, write the code.";
+/*	char *str = "First, solve the problem. Then, write the code.";*/
 
-	char *dup_str = _strdup(str);
+	char *dup_str = _strdup("First, solve the problem. Then, write the code.");
 	if (dup_str == NULL)
 	{
 		return (1);
