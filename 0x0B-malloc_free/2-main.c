@@ -11,8 +11,12 @@ int main()
 {
 	char *s1 = "Hey ";
 	char *s2 = "there";
-	char *result = str_concat(s1, s2);
-
-	free (result);
+	char *new_str = str_concat(s1, s2);
+	
+	if (new_str)
+	{
+		printf("%s\n", new_str);
+		free (new_str);
+	}
 	return (0);
 }
