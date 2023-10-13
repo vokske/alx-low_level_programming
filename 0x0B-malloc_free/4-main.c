@@ -11,8 +11,9 @@ int main(void)
 {
 	int height = 5;
 	int width = 5;
+	int i, j, **grid;
 
-	int grid = (int **)alloc_grid(width, height);
+	grid = (int **)alloc_grid(width, height);
 	if (grid == NULL)
 	{
 		printf("Failed to allocate grid.\n");

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * free-grid - Frees a 2-D grid previously created
+ * free_grid - Frees a 2-D grid previously created
  * @grid: 2-D array
  * @height: Array columns
  *
