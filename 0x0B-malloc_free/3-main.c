@@ -7,13 +7,13 @@
  *
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	int width = 4;
 	int height = 4;
 	int i, j;
-
 	int **grid = alloc_grid(width, height);
+	
 	if (grid == NULL)
 	{
 		printf("Failed to allocate grid.\n");
