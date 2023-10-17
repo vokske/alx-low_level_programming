@@ -3,15 +3,30 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * my_strlen - Calculates string length
+ * @s: Random string
+ *
+ * Return: String length
+ */
 int my_strlen(char *s)
 {
 	int i = 0;
-	while (s[i]!= '\0')
+
+	while (s [i]!= '\0')
 	{
 		i++;
 	}
 	return (i);
 }
+/**
+ * my_strcpy - Copies string
+ * @dest: String to which original string will be copied
+ * @src: String to copy
+ * @n: Counter
+ *
+ * Return: Neww string
+ */
 char *my_strcpy(char *dest, char *src, int n)
 {
 	int i;
@@ -23,7 +38,12 @@ char *my_strcpy(char *dest, char *src, int n)
 	dest[n] = '\0';
 	return (dest);
 }
-
+/**
+ * strtow - Converts string to words
+ * @str: Random string
+ *
+ * Return: Words
+ */
 char **strtow(char *str)
 {
 	int count = 0, start = 0, end = 0, word_index = 0, word_length, i;
