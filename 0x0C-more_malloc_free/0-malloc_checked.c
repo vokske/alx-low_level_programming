@@ -6,7 +6,7 @@
  * malloc_checked - Allocates memory
  * @b: Random integer
  *
- * Return - Nothing
+ * Return: Nothing
  */
 void *malloc_checked(unsigned int b)
 {
