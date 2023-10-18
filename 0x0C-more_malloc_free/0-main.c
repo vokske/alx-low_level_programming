@@ -7,7 +7,7 @@
  *
  * Return: Always 0
  */
-int main(void)
+int main()
 {
 	unsigned int num = 10;
 
