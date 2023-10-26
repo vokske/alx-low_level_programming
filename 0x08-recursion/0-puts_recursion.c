@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** _puts_recursion: Prints a string
+/**
+ * _puts_recursion - Prints a string
  * @s: Random string
  *
  * Return: Nothing
