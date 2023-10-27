@@ -5,8 +5,7 @@
 /**
  * _sqrt_check - Does binary search for square root
  * @n: Random number
- * @min: Smallest number in our range
- * @max: Largest number in our range
+ * @guess: Random number for iteration
  *
  * Return: Guess
  */
