@@ -10,32 +10,30 @@
  *
  * Return: Guess
  */
-int _sqrt_check(int n, int min, int max)
+int _sqrt_check(int n, int guess)
 {
-	int guess;
 	int guess_sq;
 
-	if (max < min)
+	if (n < 0)
 	{
 		return (-1);
 	}
-	guess = (min + max) / 2;
+	if (n == 0 || n == 1)
+	{
+		return (n);
+	}
 	guess_sq = guess * guess;
-	if (guess > 46340)
-	{
-		return (-1);
-	}
-	if (guess_sq <= n && (guess + 1) * (guess + 1) > n)
+	if (guess_sq == n)
 	{
 		return (guess);
 	}
-	else if (guess_sq < n)
+	else if (guess_sq > n)
 	{
-		return (_sqrt_check(n, guess + 1, max));
+		return (-1);
 	}
 	else
 	{
-		return (_sqrt_check(n, min, guess - 1));
+		return (_sqrt_check(n, guess + 1));
 	}
 }
 /**
@@ -46,6 +44,6 @@ int _sqrt_check(int n, int min, int max)
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt_check(n, 1, n));
+	return (_sqrt_check(n, 1));
 }
 
