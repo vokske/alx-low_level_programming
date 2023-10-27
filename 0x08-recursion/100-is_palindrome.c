@@ -29,7 +29,7 @@ int get_len(char *s, int index)
  */
 int palindrome_checker(char *s, int start, int end)
 {
-	if (start == end)
+	if (start >= end)
 	{
 		return (1);
 	}
