@@ -25,7 +25,7 @@ int _sqrt_check(int n, int min, int max)
 	{
 		return (-1);
 	}
-	if (guess_sq == n)
+	if (guess_sq <= n && (guess + 1) * (guess + 1) > n)
 	{
 		return (guess);
 	}
