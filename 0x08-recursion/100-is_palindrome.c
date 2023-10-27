@@ -2,6 +2,24 @@
 #include <stdio.h>
 
 /**
+ * get_len - Calculate string length
+ * @s: Random string
+ * @index: Position of charcater in string
+ *
+ * Return: Index
+ */
+int get_len(char *s, int index)
+{
+	if (s[index] == '\0')
+	{
+		return (index);
+	}
+	else
+	{
+		return (get_len(s, index + 1));
+	}
+}
+/**
  * palindrome_checker - Checks every character of a string
  * @s: random string
  * @start: First position of string
@@ -32,11 +50,7 @@ int palindrome_checker(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int length = 0;
-
-	while (s[length] != '\0')
-	{
-		length++;
-	}
+	int length = get_len(s, 0);
+	
 	return (palindrome_checker(s, 0, length - 1));
 }
