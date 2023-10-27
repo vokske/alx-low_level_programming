@@ -4,7 +4,7 @@
 /**
  * divisibility - Checks for the number of divisors
  * @n: Random number
- * @divisor: Divisors of n
+ * @i: Divisors of n
  *
  * Return: Number of divisors
  */
