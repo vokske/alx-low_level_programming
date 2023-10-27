@@ -51,5 +51,6 @@ int palindrome_checker(char *s, int start, int end)
 int is_palindrome(char *s)
 {
 	int length = get_len(s, 0);
+	
 	return (palindrome_checker(s, 0, length - 1));
 }
