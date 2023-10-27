@@ -13,17 +13,23 @@
 int _sqrt_check(int n, int min, int max)
 {
 	int guess;
+	int guess_sq;
 
 	if (max < min)
 	{
 		return (-1);
 	}
 	guess = (min + max) / 2;
-	if ((guess * guess) == n)
+	guess_sq = guess * guess;
+	if (guess > 46340)
+	{
+		return (-1);
+	}
+	if (guess_sq == n)
 	{
 		return (guess);
 	}
-	else if ((guess * guess) < n)
+	else if (guess_sq < n)
 	{
 		return (_sqrt_check(n, guess + 1, max));
 	}
