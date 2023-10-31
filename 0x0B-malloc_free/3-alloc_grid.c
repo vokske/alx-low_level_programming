@@ -4,8 +4,8 @@
 
 /**
  * alloc_grid - Creates a 2-D array of integers
- * @width - Array rows
- * @height - Array columns
+ * @width: Array rows
+ * @height: Array columns
  *
  * Return: Pointer to the 2-D array
  */
@@ -17,7 +17,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	grid = (int**) malloc(height * sizeof(int *));
+	grid = (int **) malloc(height * sizeof(int *));
 	if (grid == NULL)
 	{
 		return (NULL);
