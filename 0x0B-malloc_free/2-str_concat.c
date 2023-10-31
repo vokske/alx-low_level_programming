@@ -4,8 +4,7 @@
 
 /**
  * str_len - Calculate the length of strings
- * @s1: String 1
- * @s2: String 2
+ * @s: Random string
  *
  * Return: Length of string
  */
