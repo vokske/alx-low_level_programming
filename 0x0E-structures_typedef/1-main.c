@@ -9,11 +9,11 @@
 void init_dog(struct dog *d, char *name, float age, char *owner);
 int main()
 {
-	struct dog dog;
-	init_dog(&dog, "Rex", 4.5, "Voks");
+	struct dog dog1;
+	init_dog(&dog1, "Rex", 4.5f, "Voks");
 
-	printf("Dog's name:%s\n", dog.name);
-	printf("Dog's age: %.1f\n", dog.age);
-	printf("Dog's owner: %s\n", dog.owner);
+	printf("Dog's name:%s\n", dog1.name);
+	printf("Dog's age: %.1f\n", dog1.age);
+	printf("Dog's owner: %s\n", dog1.owner);
 	return (0);
 }
