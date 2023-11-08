@@ -6,7 +6,7 @@
  *
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	struct dog my_dog = {"Bosco", 4.5, "Voks"};
 
