@@ -6,7 +6,7 @@
  *
  * Return: Always 0
  */
-int main()
+int main(void)
 {
 	sum_them_all(2, 3, 45);
 	return (0);
