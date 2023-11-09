@@ -4,7 +4,7 @@
 
 /**
  * print_strings - Prints strings
- * @separator - Coma
+ * @separator: Coma
  * @n: Number of parameters
  *
  * Return: Nothing
