@@ -1,3 +1,8 @@
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
  * str_len - Calculates the length of string
  * @str: Random string
@@ -13,6 +18,7 @@ size_t str_len(const char *str)
                 len++;
         }
 	return (len);
+}
 /**
  * add_node_end - Adds a new node at the end of a list_t list.
  * @head: A pointer to the address of the head of the list_t list.
@@ -47,8 +53,8 @@ list_t *add_node_end(list_t **head, const char *str)
 		while (last_node->next != NULL)
 		{
 			last_node = last_node->next;
-			last_node-> = new_node;
+			last_node->next = new_node;
 		}
-		return (new_node);
 	}
+	return (new_node);
 }
