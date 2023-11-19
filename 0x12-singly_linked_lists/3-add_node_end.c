@@ -11,12 +11,12 @@
  */
 size_t str_len(const char *str)
 {
-        size_t len = 0;
+	size_t len = 0;
 
-        while (str[len] != '\0')
-        {
-                len++;
-        }
+	while (str[len] != '\0')
+	{
+		len++;
+	}
 	return (len);
 }
 /**
@@ -37,6 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new_node == NULL)
 	{
 		return (NULL);
+		free(new_node);
 	}
 	if (*head == NULL)
 	{
