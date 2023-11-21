@@ -4,7 +4,7 @@
 
 /**
  * pop_listint - Deletes the head node of a list
- * @head - Pointer to the head node of the list
+ * @head: Pointer to the head node of the list
  *
  * Return: Head node's data (Integer)
  */
@@ -17,7 +17,7 @@ int pop_listint(listint_t **head)
 	{
 		return (0);
 	}
-	
+
 	temp = *head;
 	n = (*head)->n;
 	*head = temp->next;
