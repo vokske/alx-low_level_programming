@@ -11,17 +11,17 @@
  */
 size_t dlistint_len(const dlistint_t *h)
 {
-	int counter = 0;
+	const dlistint_t *head = h;
+	size_t counter = 0;
 
-	if (h == NULL)
+	if (head == NULL)
 	{
 		return (0);
 	}
-	while (h != NULL)
+	while (head != NULL)
 	{
+		head = head->next;
 		counter++;
-		h = h->next;
 	}
-	printf("%d\n", counter);
 	return (counter);
 }
