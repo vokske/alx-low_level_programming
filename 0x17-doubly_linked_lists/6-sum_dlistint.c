@@ -23,6 +23,5 @@ int sum_dlistint(dlistint_t *head)
 		head = head->next;
 		counter++;
 	}
-	printf("%d\n", sum);
 	return (sum);
 }
