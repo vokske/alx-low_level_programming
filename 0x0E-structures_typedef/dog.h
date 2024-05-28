@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef DOG_H
 #define DOG_H
 
@@ -21,5 +22,7 @@ typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
+size_t _strlen(const char *s);
+char *_strcpy(char *dest, char const *src);
 dog_t *new_dog(char *name, float age, char *owner);
 #endif
