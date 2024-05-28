@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free-dog - frees memory allocated for the struct dog and all its instances
+ * free_dog - frees memory allocated for the struct dog and all its instances
  * @d: Struct dog
  *
  * Return: Nothing
