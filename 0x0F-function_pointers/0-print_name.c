@@ -1,20 +1,19 @@
 #include "function_pointers.h"
 #include <stdio.h>
 
-void print_name(char *name, void (*f)(char *))
+void f(char *s)
 {
-	if (name != NULL && f != NULL)
+	int i = 0;
+	while(s[i] != '\0')
 	{
-		f(name);
-	}
-}
-
-void print_my_name(char *name)
-{
-	while (*name)
-	{
-		_putchar(*name);
-		name++;
+		_putchar(s[i]);
+		i++;
 	}
 	_putchar('\n');
+}
+
+void print_name(char *name, void (*f)(char *))
+{
+
+	f(name);
 }
