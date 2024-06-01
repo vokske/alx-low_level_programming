@@ -16,10 +16,12 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
+	current = 0;
+
 	for (i = sizeof(n) * 8 - 1; i >= 0; i--)
 	{
 
-		if (n & (1UL << i))
+		if ((n & (1UL << i)) != 0)
 		{
 			current = 1;
 		}
