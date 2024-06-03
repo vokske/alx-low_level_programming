@@ -31,12 +31,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes_rd = read(content, buffer, letters);
 	if (bytes_rd == -1)
 	{
+		free(buffer);
 		close(content);
 		return (0);
 	}
 	bytes_wrt = write(STDOUT_FILENO, buffer, bytes_rd);
 	if (bytes_wrt == -1 || bytes_wrt != bytes_rd)
 	{
+		free(buffer);
 		close(content);
 		return (0);
 	}
