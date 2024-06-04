@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int fd_r, fd_w, r, w, cl_r, cl_w;
-	char *buff[BUFSIZ];
+	char *buff[1024];
 
 	if (argc != 3)
 	{
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	if (argv[2])
-		fd_w = open(argv[2], O_CREAT || O_WRONLY | O_TRUNC, 0664);
+		fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(fd_r, buff, BUFSIZ);
 	w = write(fd_w, buff, r);
 	while (r)
