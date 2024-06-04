@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	}
 	if (argv[2])
 		fd_w = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	r = read(fd_r, buff, BUFSIZ);
+	r = read(fd_r, buff, 1024);
 	w = write(fd_w, buff, r);
 	while (r)
 	{
