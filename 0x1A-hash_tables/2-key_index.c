@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 
-/** key_index - Gives the index of a key
+/**
+ * key_index - Gives the index of a key
  *
  * @key: Pointer to te key
  * @size: Size of the array of the hash table
