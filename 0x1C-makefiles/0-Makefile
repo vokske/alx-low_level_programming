@@ -1,0 +1,4 @@
+all: select
+
+select: main.o school.o
+	gcc main.o school.o
